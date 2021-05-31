@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>던킨메인</title>
+<style type="text/css">
+	
+	/*초기화*/
+	*{
+		padding:0;
+		margin: 10px;
+	}
+
+	li{
+		list-style-type: none;
+	}
+	.clear{
+		clear:both;
+	}
+	/* */
+#page{/*가운데 정렬*/
+	width:1500px;
+	margin:auto;
+	border: solid 0px orange;
+
+}
+body{
+	
+}
+}
+header{
+	width: 1400px;
+	height: 200px;
+	margin-top: 10px;
+	border:solid 1px #cccccc;
+
+}
+#logo {
+	margin:20px;
+	/*border-bottom: dotted 2px gray;*/
+	float:left;
+}
+#top{
+	float:right;
+	margin: 30px 20px 0 0;
+}
+nav{
+	width:1475px;
+	height: 50px;
+	margin-top:10px;
+	padding-top: 10px;
+	border:solid 1px #cccccc;
+	background-color: #fabc8f;
+
+}
+nav li{
+	display: inline;
+	margin: 50px 30px;
+	text-align: center;
+}
+
+section{
+	float: left;
+	margin-top:10px;
+	border:solid 1px #cccccc;
+			background-color: white;
+}
+
+aside{
+	width: 235px;
+	height: 348px;
+	float: left;
+	margin-top:10px;
+	border: solid 1px #cccccc;
+	margin-left: 5px;
+			background-color: white;
+}
+
+aside li{
+	margin-top: 90px;
+	margin-bottom: 100px;
+}
+
+
+footer{
+	width: 1475px;
+	height: 100px;
+	border-top: solid 1px #cccccc;
+	margin-top: 20px;
+	border:solid 1px #cccccc;
+			background-color: silver;
+}
+#address{
+	float: left;
+	margin: 30px 0 0 20px;
+}
+#customer{
+	float: right;
+	margin:30px 0 0 180px;
+	padding-right: 20px;
+}
+
+.btn {
+	font-size: 20px;
+	display:block; 
+	width:200px;
+	height:40px; 
+	line-height:40px; 
+	border:1px #ff6826 solid; 
+	margin:15px auto; 
+	background-color:#ff6826; 
+	text-align:left; 
+	cursor: pointer; 
+	color:#333; 
+	transition:all 0.9s, color 0.3; 
+} 
+
+.btn:hover{color:#fff;}
+
+.hover1:hover{ box-shadow:200px 0 0 0 rgba(0,0,0,0.3) inset;
+
+</style>
+</head>
+
+<body id=page>
+
+
+<header>
+	<div id='logo'><img src="./img/dunkin.png" width="300"></div>
+	<div id='top'>
+		로그인 ㅣ 회원가입 ㅣ 사이트 맵 ㅣ 회사소개 </div>
+</header>
+<div class='clear'> </div> <!--float 속성해제-->
+<nav>
+	<ul>
+		<li>ONLINE STORE</li>
+		<li>MENU</li>
+		<li>영양정보 및 알레르기</li>
+		<li>EVENT</li>
+		<li>STORE</li>
+		<li>BRAND</li>
+	</ul>
+</nav>
+<div class='clear'> </div> <!--float 속성해제-->
+<section>
+	<img src='./img/event.jpg' width="1200">
+		<!-- <iframe src="do.html"name="aa" width="1400px" height="500px" frameborder="0"></iframe> -->
+</section>
+
+<aside>
+	<ul>
+		<li> <!-- <a href="do.html" target="aa"> --><button class="btn hover1"> BASIC </button><!-- </a> --></li>
+		<li> <button class="btn hover1"> BAGELS </button></li>
+	</ul>
+</aside>
+<div class='clear'> </div> <!--float 속성해제-->
+<footer>
+	<div id='address'>
+		사업자 등록번호 : 303-81-09535 개인정보관리책임자 : 김경우
+	</div>
+	<div id='customer'>
+		TEL : 080-555-3131
+	</div>
+</footer>
+</body>
+</html>
