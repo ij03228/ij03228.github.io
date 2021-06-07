@@ -7,20 +7,18 @@
 	/*초기화*/
 	*{
 		padding:0;
-		margin: 10px;
+		margin: 0px;
+		position: relative;
 	}
 
-	li{
-		list-style-type: none;
-	}
 	.clear{
 		clear:both;
 	}
 	/* */
 #page{/*가운데 정렬*/
-	width:1500px;
+	width:1920px;
 	margin:auto;
-	border: solid 0px orange;
+	border: solid 1px orange;
 
 }
 body{
@@ -28,24 +26,42 @@ body{
 }
 }
 header{
-	width: 1400px;
-	height: 200px;
-	margin-top: 10px;
 	border:solid 1px #cccccc;
+	background-color: black;
+
 
 }
 #logo {
-	margin:20px;
+	margin:100px;
 	/*border-bottom: dotted 2px gray;*/
-	float:left;
+	display: inline-block;
+	float: center;
+	/*background-color: blue;*/
 }
-#top{
-	float:right;
-	margin: 30px 20px 0 0;
+#login{
+	display: inline-block;
+	margin-top: 0px;
+	/*float: right;*/
+	font-size: 30px;
+	position: relative;
+	top: -220px;
+	left: 800px;
+
 }
-nav{
-	width:1475px;
-	height: 50px;
+#login li{
+	padding-left: 40px;
+	list-style-type: none;
+	display: inline;}
+
+#login a{
+	text-decoration: none;
+	color: black;
+}
+
+}
+.nav{
+	width:1910px;
+	height: 500px;
 	margin-top:10px;
 	padding-top: 10px;
 	border:solid 1px #cccccc;
@@ -56,13 +72,18 @@ nav li{
 	display: inline;
 	margin: 50px 30px;
 	text-align: center;
+	font-size: 40px;
+
 }
 
 section{
-	float: left;
+	/*float: left;*/
 	margin-top:10px;
-	border:solid 1px #cccccc;
+	border:solid 0px #cccccc;
 			background-color: white;
+}
+section ul{
+		display: inline;
 }
 
 aside{
@@ -70,8 +91,7 @@ aside{
 	height: 348px;
 	float: left;
 	margin-top:10px;
-	border: solid 0px #cccccc;
-	margin-left: 5px;
+	border: solid 1px #cccccc;
 			background-color: white;
 }
 
@@ -82,12 +102,12 @@ aside li{
 
 
 footer{
-	width: 1475px;
+	width: 1920px;
 	height: 100px;
 	border-top: solid 1px #cccccc;
 	margin-top: 20px;
 	border:solid 1px #cccccc;
-			background-color: silver;
+	background-color: silver;
 }
 #address{
 	float: left;
@@ -100,8 +120,7 @@ footer{
 }
 
 .btn {
-	font-size: 20px;
-	display:block; 
+	font-size: 100px;
 	width:200px;
 	height:40px; 
 	line-height:40px; 
@@ -111,47 +130,90 @@ footer{
 	text-align:left; 
 	cursor: pointer; 
 	color:#333; 
-	transition:all 0.9s, color 0.3; 
+	transition:all 0.9s, color 0.3;
+		display: inline;
+	margin: 50px 30px;
+	text-align: center;
+
+
 } 
 
-.btn:hover{color:#fff;}
+.btn:hover{color:silver;}
 
-.hover1:hover{ box-shadow:200px 0 0 0 rgba(0,0,0,0.3) inset;
+.hover1:hover{ box-shadow:200px 0 0 0 rgba(0,0,0,0.3) inset;}
 
 </style>
 </head>
 
-<body id=page>
-
+<body>
+<center>
 
 <header>
 	<div id='logo'><img src="./img/dunkin.png" width="300"></div>
-	<div id='top'>
-		로그인 ㅣ 회원가입 ㅣ 사이트 맵 ㅣ 회사소개 </div>
+
+	<nav>
+		<ul>
+			<li> ONLINE STORE</li>
+			<li> MENU</li>
+			<li> 영양정보 및 알레르기</li>
+			<li> EVENT</li>
+			<li> STORE</li>
+			<li> BRAND</li>
+		</ul>
+		<div>
+	<table border=0>
+	<tr>
+		<th><a href=''> ONLINE STORE</a></th>
+		<th><a href=''> MENU</a></th>
+		<th><a href=''> 영양정보 및 알레르기</a></th>
+		<th><a href=''> EVENT</a></th>
+		<th><a href=''> STORE</a></th>
+		<th><a href=''> BRAND</a></th>
+	</tr>
+
+		<tr>
+		<th><a href=''> 해피오더 서비스</a></th>
+		<th><a href=''> DONUTS</a></th>
+		<th><a href=''> 영양정보</a></th>
+		<th><a href=''> 진행중인 이벤트</a></th>
+		<th><a href=''> 매장찾기</a></th>
+		<th><a href=''> 브랜드 소개</a></th>
+	</tr>
+
+		<tr>
+		<th><a href=''> 해피 E-마켓</a></th>
+		<th><a href=''> BAGELS</a></th>
+		<th><a href=''> DONUTS</a></th>
+		<th><a href=''> 당첨자발표</a></th>
+		<th><a href=''> 가맹문의</a></th>
+		<th><a href=''> 브랜드 소식</a></th>
+	</tr>
+	</table>
+</div>
+</nav>
+	<div id='login'>
+		<ul>
+			<li><a href="">로그인</a></li>
+			<li><a href="">회원가입</a></li>
+		</ul>
+	</div>
 </header>
 <div class='clear'> </div> <!--float 속성해제-->
-<nav>
-	<ul>
-		<li>ONLINE STORE</li>
-		<li>MENU</li>
-		<li>영양정보 및 알레르기</li>
-		<li>EVENT</li>
-		<li>STORE</li>
-		<li>BRAND</li>
-	</ul>
-</nav>
+
 <div class='clear'> </div> <!--float 속성해제-->
 <section>
-	<img src='./img/event.jpg' width="1200">
+	<img src='./img/event.jpg' width="3000">
 		<!-- <iframe src="do.html"name="aa" width="1400px" height="500px" frameborder="0"></iframe> -->
+
+
+
 </section>
 
-<aside>
 	<ul>
 		<li> <!-- <a href="do.html" target="aa"> --><button class="btn hover1"> BASIC </button><!-- </a> --></li>
-		<li> <button class="btn hover1"> BAGELS </button></li>
+		<li class='clear'> <button class="btn hover1"> BAGELS </button></li>
 	</ul>
-</aside>
+
 <div class='clear'> </div> <!--float 속성해제-->
 <footer>
 	<div id='address'>
@@ -161,5 +223,6 @@ footer{
 		TEL : 080-555-3131
 	</div>
 </footer>
+</center>
 </body>
 </html>
