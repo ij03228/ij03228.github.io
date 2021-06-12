@@ -23,7 +23,7 @@
 }
 
 header {
-	z-index: 10;
+	z-index: 15;
   position: fixed;
   top: 0;
   width: 4000px;
@@ -94,6 +94,16 @@ nav li{
 	height: 450px;
 	border-bottom: 5px solid #2c1810;
 }
+section{}
+.section03{
+	z-index: -3;
+	position: relative;
+	top: 160px;
+	height: 438px;
+	/*border-bottom: 5px solid #2c1810;*/
+	background-size: 2537px 438px;
+	background-image: url('./img/coffee_main.png');
+}
 section ul{
 		display: inline;
 }
@@ -130,7 +140,7 @@ footer{
 	border:solid 0px #cccccc;
 	background-color: white;
 	position: relative;
-	top: 300px;
+	top: 100px;
 }
 #address{
 	float: left;
@@ -170,15 +180,23 @@ footer{
 }
 
 table{
-	position: relative;
-	top: 300px;
-	background-color: #f8faf0;
-	border: 5px solid #2c1810;
+	background-color: none;
+	/*border: 5px solid #2c1810;*/
 }
 th>div{
 	margin: 10px;
 	position: 0px;
 
+}
+.pp{
+	position: relative;
+	z-index: 10;
+	top: 200px;}
+.pp2{
+	position: relative;
+	z-index: 11;
+	top: 100px
+}
 }
 </style>
 </head>
@@ -188,51 +206,43 @@ th>div{
 	<header>
 <iframe src="allmenu.html" width="4000px" height="1000px" frameborder="0" scrolling = "no"></iframe>
 </header>
-
-<section class="section01">
-	<iframe src="event.html"width="1200px"height='324px' frameborder="0" scrolling = "no"></iframe>
+<section class="section03"><iframe src="main3.html"width="2537px" height="438px" frameborder="0" scrolling = "no"></iframe>
 </section>
-
-<section class="section02">
-<table>
-	<tr>
-<th>
-	<div>
-	<iframe src="small_event.html" width="266px" height="266px" frameborder="0" scrolling = "no"></iframe>
-	</div>
-</th>
-<th><div>
-	<iframe src="small_event02.html" width="266px" height="266px" frameborder="0" scrolling = "no"></iframe>
-</div>
-</th>
-<th><div>
-	<iframe src="small_event03.html" width="266px" height="266px" frameborder="0" scrolling = "no"></iframe>
-</div>
-</th>
-<th><div>
-	<iframe src="small_event04.html" width="266px" height="266px" frameborder="0" scrolling = "no"></iframe>
-</div>
-</th>
+<article>
+	<table class="pp">
+		<tr>
+			<th>
+		<div >
+	<iframe src="small_menu0.html" width=425px height=550px frameborder="0" scrolling = "no"></iframe></div></th>
+				<th>
+		<div >
+	<iframe src="small_menu02.html" width=425px height=550px frameborder="0" scrolling = "no"></iframe></div></th>
+				<th>
+		<div >
+	<iframe src="small_menu03.html" width=425px height=550px frameborder="0" scrolling = "no"></iframe></div></th>
+				<th>
+		<div >
+	<iframe src="small_menu04.html" width=425px height=550px frameborder="0" scrolling = "no"></iframe></div></th>
 </tr>
 </table>
-</section>
+<table class="pp2">
+<tr>
+				<th>
+		<div >
+	<iframe src="small_menu05.html" width=425px height=550px frameborder="0" scrolling = "no"></iframe></div></th>
+				<th>
+		<div >
+	<iframe src="small_menu06.html" width=425px height=550px frameborder="0" scrolling = "no"></iframe></div></th>
+				<th>
+		<div >
+	<iframe src="small_menu07.html" width=425px height=550px frameborder="0" scrolling = "no"></iframe></div></th>
+				<th>
+		<div >
+	<iframe src="small_menu08.html" width=425px height=550px frameborder="0" scrolling = "no"></iframe></div></th>
 
-<div class='clear'> </div> <!--float 속성해제-->
-
-<div class='clear'> </div> <!--float 속성해제-->
-<!-- <section>
-	<img src='./img/event.jpg' width="1600px" frameborder="0" scrolling = "no">
-		<iframe src="do.html"name="aa" width="1400px" height="500px" frameborder="0"></iframe>
-
-
-
-</section> -->
-<!--
-	<ul>
-		<li>  <a href="do.html" target="aa"> <button class="btn hover1"> BASIC </button> </a> </li>
-		<li class='clear'> <button class="btn hover1"> BAGELS </button></li>
-	</ul>
--->
+	</tr>
+</table>
+</article>
 <div class='clear'> </div> <!--float 속성해제-->
 <footer>
 <iframe src="footer.html" width="500px" frameborder="0" scrolling = "no"> </iframe>

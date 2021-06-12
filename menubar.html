@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>상단 메뉴바</title>
+	<style type="text/css">
+	*{
+		margin: 0px;
+		padding: 0px;
+	}
+
+	header {
+		background-color: white;
+		border: 1px solid black;
+		width: 4000px;
+		height: 50px;
+		z-index: 9;
+
+	}
+
+		.menu{
+			width: auto;
+    		margin: 16px 30px 15px 45px;
+    		padding: auto;
+    		display: inline-block;
+    		color: #2c1810;
+    		font-weight: bold;
+    		font-size: 15px;
+    	}
+    	table{margin-top: 15px;}
+
+    	.down{
+    		position: relative;
+    		display: inline-block;
+
+    	}
+    	.down_content{
+    		width:3000px;
+    		height:100px;   
+    		display: none;
+    		z-index: -1;
+    		background-color: rgba(255, 255, 255, 0.9);
+    		position: absolute;
+    		top: 50px;
+    		left: -970px;
+    		border: 1px solid black;
+
+    	}
+
+.down_content a{
+    display: block;
+    color: #7a6e5f;
+    padding: auto;
+    margin: 10px 100px 0 0;
+    text-decoration: none;
+    font-size: 10px;
+}
+.down_content th{
+    width: auto;
+}
+
+.down:hover .down_content {
+    display: block;
+}
+
+
+	</style>
+</head>
+<body>
+	<center>
+		<header>
+			<nav class="down">
+				<div class="menu">ONLINE STORE</div>
+            	<div class="menu">MENU</div>
+            	<div class="menu">영양정보 및 알레르기</div>
+            	<div class="menu">EVENT</div>
+            	<div class="menu">STORE</div>
+            	<div class="menu">BRAND</div>
+            	<div class="down_content">
+            		<top>
+            		</top>
+            		<table>
+            			<tr>
+		<th><a href=''> 해피오더 서비스</a></th>
+		<th><a href=''> DONUTS</a></th>
+		<th><a href=''> 영양정보</a></th>
+		<th><a href=''> 진행중인 이벤트</a></th>
+		<th><a href=''> 매장찾기</a></th>
+		<th><a href=''> 브랜드 소개</a></th>
+	</tr>
+
+		<tr>
+		<th><a href=''> 해피 E-마켓</a></th>
+		<th><a href=''> BAGELS</a></th>
+		<th><a href=''> DONUTS</a></th>
+		<th><a href=''> 당첨자발표</a></th>
+		<th><a href=''> 가맹문의</a></th>
+		<th><a href=''> 브랜드 소식</a></th>
+	</tr>
+            		</table>
+            	</div>
+            </nav>
+
+
+		</header>
+	</center>
+
+</body>
+</html>

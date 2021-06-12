@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>작은배너창</title>
+  <style>
+    *{margin:0;padding:0;}
+    ul,li{list-style:none; }
+    .slide{height:266px;overflow:hidden;}
+    .slide ul{width:calc(100% * 4);display:flex;animation:slide 10s infinite;} /* slide를 8초동안 진행하며 무한반복 함 */
+    .slide li{width:calc(100% / 4);height:266px;}
+    .slide li:nth-child(1){background:#fff;}
+    .slide li:nth-child(2){background:#fff;}
+    .slide li:nth-child(3){background:#fff;}
+    .slide li:nth-child(4){background:#fff;}
+    @keyframes slide {
+      0% {margin-left:0;} /* 0 ~ 10  : 정지 */
+      10% {margin-left:0;} /* 10 ~ 25 : 변이 */
+      25% {margin-left:-100%;} /* 25 ~ 35 : 정지 */
+      35% {margin-left:-100%;} /* 35 ~ 50 : 변이 */
+      50% {margin-left:-200%;}
+      60% {margin-left:-200%;}
+      75% {margin-left:-300%;}
+      85% {margin-left:-300%;}
+      100% {margin-left:0;}
+    }
+  </style>
+</head>
+<body>
+  <div class="slide">
+    <ul>
+      <li><a href=" "><img src="./img/3-1.jpg"></a></li>
+      <li><a href=" "><img src="./img/3-2.jpg"></a></li>
+      <li><a href=" "><img src="./img/3-3.jpg"></a></li>
+      <li><a href=" "><img src="./img/3-4.jpg" width="266px"></a></li>
+    </ul>
+  </div>
+</body>
+</html>
