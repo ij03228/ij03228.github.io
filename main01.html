@@ -81,22 +81,21 @@ nav li{
 	/*float: left;*/
 	padding: 0px;
 	margin: 0px;
-	border:solid 0px #cccccc;
 	background-color: white;
 	position: relative;
 	top: 165px;
 }
 .section02{
+	margin: 0;
+	padding: 0;
 	z-index: -3;
 	position: relative;
 	top: 10px;
 	background-color: #f2941b;
-	height: 450px;
+	height: 400px;
 	border-bottom: 5px solid #2c1810;
 }
-section ul{
-		display: inline;
-}
+
 
 aside{
 	float: center;
@@ -124,13 +123,13 @@ aside{
 
 footer{
 	width: 1500px;
-	height: 300px;
+	height: 0px;
 	border-top: solid 0px #cccccc;
 	margin-top: 20px;
 	border:solid 0px #cccccc;
 	background-color: white;
 	position: relative;
-	top: 300px;
+	top: 400px;
 }
 #address{
 	float: left;
@@ -142,58 +141,49 @@ footer{
 	padding-right: 20px;
 }
 
-.btn {
-	font-size: 100px;
-	width:200px;
-	height:40px; 
-	line-height:40px; 
-	border:1px #ff6826 solid; 
-	margin:15px auto; 
-	background-color:#ff6826; 
-	text-align:left; 
-	cursor: pointer; 
-	color:#333; 
-	transition:all 0.9s, color 0.3;
-		display: inline;
-	margin: 50px 30px;
-	text-align: center;
-
-
-} 
-
-.btn:hover{color:silver;}
-
-.hover1:hover{ box-shadow:200px 0 0 0 rgba(0,0,0,0.3) inset;}
-
 .s1{
 	position: relative;
 }
 
 table{
 	position: relative;
-	top: 300px;
+	top: -150px;
 	background-color: #f8faf0;
 	border: 5px solid #2c1810;
 }
 th>div{
 	margin: 10px;
-	position: 0px;
-
+	/*position: 0px;*/
 }
+.button01{
+	z-index: 30;
+	position: relative;
+	right: -95px;
+	top: 750px;}
+
 </style>
 </head>
 
 <body>
 <center>
 	<header>
-<iframe src="allmenu.html" width="4000px" height="1000px" frameborder="0" scrolling = "no"></iframe>
+<iframe src="allmenu.html" width="4000px" height="300px" frameborder="0" scrolling = "no"></iframe>
 </header>
+
+
 
 <section class="section01">
 	<iframe src="event.html"width="1200px"height='324px' frameborder="0" scrolling = "no"></iframe>
 </section>
 
+<article class="button01">
+	<iframe src="button01.html" width="1200px" height="150px" frameborder="0" scrolling="no"></iframe>
+</article>
+
 <section class="section02">
+	<img src="./img./1.png" width="400px"> <img src="./img./2.png" width="400px">
+	<img src="./img./3.png" width="400px"> <img src="./img./4.png" width="400px">
+	<img src="./img./5.jpg" width="400px"> <img src="./img./6.png" width="400px">
 <table>
 	<tr>
 <th>
@@ -223,19 +213,10 @@ th>div{
 <!-- <section>
 	<img src='./img/event.jpg' width="1600px" frameborder="0" scrolling = "no">
 		<iframe src="do.html"name="aa" width="1400px" height="500px" frameborder="0"></iframe>
+ -->
 
-
-
-</section> -->
-<!--
-	<ul>
-		<li>  <a href="do.html" target="aa"> <button class="btn hover1"> BASIC </button> </a> </li>
-		<li class='clear'> <button class="btn hover1"> BAGELS </button></li>
-	</ul>
--->
-<div class='clear'> </div> <!--float 속성해제-->
 <footer>
-<iframe src="footer.html" width="500px" frameborder="0" scrolling = "no"> </iframe>
+<iframe src="footer.html" height="300px" width="500px" frameborder="0" scrolling = "no"> </iframe>
 </footer>
 </center>
 </body>

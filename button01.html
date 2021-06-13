@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>button</title>
+
+	<style type="text/css">
+	*{margin: 0;
+		padding: 0;}
+a:link {text-decoration: none;}
+		.btn {
+			font-size: 60px;
+			 
+			width:500px; 
+			height:150px; 
+			line-height:30px; 
+			/*border:1px #3399dd solid;*/ 
+			margin:0px auto; 
+			background-color:#66aaff; 
+			text-align:center; 
+			cursor: pointer; 
+			color:#473c34; 
+			transition:all 0.9s, color 0.3s;
+			text-shadow: 0px 0px 10px white;
+			border: 0;
+			outline: 0;
+		} 
+		.btn:hover{color:#fff;}
+		.btn2{ 
+	background-size: 500px 150px;
+	background-image: url('./img/button1.png');
+}
+.btn3{ 
+	background-size: 500px 150px;
+	background-image: url('./img/button2.png');
+}
+
+
+.hover1{}
+.hover1:hover{ box-shadow:500px 0 0 0 rgba(0,0,0,0.5) inset; } 
+.hover2:hover{ box-shadow:-500px 0 0 0 rgba(0,0,0,0.5) inset; } 
+.hover3:hover{ box-shadow: 0 160px 0 0 rgba(0,0,0,0.25) inset, 0 -160px 0 0 rgba(0,0,0,0.25) inset; } 
+.hover4:hover{ box-shadow: 200px 0 0 0 rgba(0,0,0,0.25) inset, -200px 0 0 0 rgba(0,0,0,0.25) inset; }
+
+	</style>
+</head>
+<body>
+
+<a href="sub01.html" target="_parent"><button type="button" class="btn btn2 hover3">  DOUNTS </button></a>
+
+<a href="sub02.html"target="_parent"><button type="button" class="btn btn3 hover3"> COFFEE </button></a>
+</body>
+</html>
